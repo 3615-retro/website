@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-red-50: #FFF7E5;
+    --color-red-100: #FFE8C7;
+    --color-red-200: #FFC694;
+    --color-red-300: #FF955C;
+    --color-red-400: #FF5724;
+    --color-red-500: #F01C00;
+    --color-red-600: #B80000;
+    --color-red-700: #8F1100;
+    --color-red-800: #6B1900;
+    --color-red-900: #421700;
+    --color-red-950: #2E1500;
+
+    --font-family-sans: "Lato", sans-serif;
+    --font-family-heading: "Outfit", sans-serif;
+
+    --shadow-bevel: 0 1px 0 var(--color-red-800);
+}
