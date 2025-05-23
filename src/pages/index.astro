@@ -5,6 +5,8 @@ import CenteredContent from '../components/CenteredContent.astro';
 import Button from '../components/Button.astro';
 
 import heroImage from '../assets/hero.png';
+import repair from '../assets/repair.svg';
+import newConsole from '../assets/new-console.svg';
 ---
 
 <Layout>
@@ -14,13 +16,38 @@ import heroImage from '../assets/hero.png';
 			<div class="flex flex-col lg:flex-row-reverse items-center gap-8 py-8 lg:gap-24 lg:px-24">
 				<img src={heroImage.src} class="w-[296px]" alt="Hero Image"/>
 				<div class="flex flex-col justify-center gap-4">
-					<h1 class="font-family-heading text-2xl md:text-4xl text-red-900 font-bold">Consoles retros remises au gout du jour</h1>
+					<h1 class="font-family-heading text-2xl md:text-4xl text-red-950 font-bold">Consoles retros remises au gout du jour</h1>
 					<p class="md:text-lg font-medium text-red-700">Restauration de consoles existantes et créations de toutes pièces</p>
 					<div class="flex">
 						<Button href="/consoles">Voir les consoles</Button>
 					</div>
 				</div>
 			</div>
+		</CenteredContent>
+	</div>
+	<div class="flex flex-col items-center bg-red-50">
+		<CenteredContent>
+			<div class="flex flex-col lg:flex-row items-center gap-24 py-12">
+				<div class="flex flex-col justify-center gap-4">
+					<img src={newConsole.src} alt="New console Icon" class="w-24"/>
+					<h2 class="font-family-heading font-bold text-4xl text-red-950">Nouvelle console</h2>
+					<p class="text-red-700">Replongez-vous dans les jeux qui ont marqué la génération précédente dans une console fait sur mesure pour vous.</p>
+				</div>
+				<div class="flex flex-col justify-center gap-4">
+					<img src={repair.src} alt="Repair Icon" class="w-24"/>
+					<h2 class="font-family-heading font-bold text-4xl text-red-950">Avec ma console</h2>
+					<p class="text-red-700">Offrez à votre console une nouvelle vie avec des composants modernes et une nouvelle apparence</p>
+				</div>
+			</div>
+		</CenteredContent>
+	</div>
+	<div class="w-full h-1 bg-orange-200"></div>
+	<div class="w-full h-1 bg-red-400"></div>
+	<div class="w-full h-1 bg-red-600"></div>
+	<div class="flex flex-col items-center bg-red-900 py-12">
+		<CenteredContent>
+			<h2 class="font-family-heading font-bold text-3xl text-red-50">Trouvez la console parfaite pour vous</h2>
+			<p class="text-red-200">Que ce soit pour une restauration où pour partir de zéro, plus d'une quarantaine de consoles supportées  </p>
 		</CenteredContent>
 	</div>
 </Layout>
